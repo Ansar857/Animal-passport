@@ -79,11 +79,12 @@ const page = () => {
           >
             {/* Logo */}
             <Image
-              src="/Flattened.svg"
+              src="/Animal_passport.svg"
               alt="serve command logo"
-              width={"33px"}
-              height={"34px"}
+              width={{sm:"120px" , "2xl" : "33px"}}
+              height={{sm:"120px" , "2xl" : "34px"}}
               fill={"var(--primary-main, #11190C)"}
+              padding={{sm:'20px'}}
             />
 
             <Box
