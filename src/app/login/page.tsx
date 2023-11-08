@@ -50,23 +50,23 @@ const page = () => {
     >
       <Box
         display={"flex"}
-        width={{ "2xl": "1440px" }}
-        height={{ "2xl": "960px" }}
-        padding={{ "2xl": "48px 32px" }}
+        width={{ "md": "1440px" }}
+        height={{ "md": "960px" }}
+        padding={{ "md": "48px 32px" }}
         flexDirection={"column"}
         justifyContent={"center"}
         alignItems={"center"}
-        gap={{ "2xl": "32px" }}
+        gap={{ "md": "32px" }}
         background={"var(--base-white, #FFF)"}
       >
         {/* ############# CONTNENT BOX  ########################## */}
 
         <Box
           display={"flex"}
-          width={{ "2xl": "360px" }}
+          width={{ "md": "360px" }}
           flexDirection={"column"}
           alignItems={"center"}
-          gap={{ "2xl": "32px" }}
+          gap={{ "md": "32px" }}
         >
           {/* #############   HEADER  ########################## */}
 
@@ -74,24 +74,24 @@ const page = () => {
             display={"flex"}
             flexDirection={"column"}
             alignItems={"center"}
-            gap={{ "2xl": "24px" }}
+            gap={{ "md": "30px" }}
             alignSelf={"stretch"}
           >
             {/* Logo */}
             <Image
               src="/Animal_passport.svg"
               alt="serve command logo"
-              width={{sm:"120px" , "2xl" : "33px"}}
-              height={{sm:"120px" , "2xl" : "34px"}}
+              width={{sm:"120px" , "md" : "80px"}}
+              height={{sm:"120px" , "md" : "80px"}}
               fill={"var(--primary-main, #11190C)"}
-              padding={{sm:'20px'}}
+              padding={{sm:'20px' , md : "0" }} 
             />
 
             <Box
               display={"flex"}
               flexDirection={"column"}
               alignItems={"flex-start"}
-              gap={{sm:"10px" , "2xl" : "12px"}}
+              gap={{sm:"10px" , "md" : "12px"}}
               alignSelf={"stretch"}
             >
               <Text
@@ -99,11 +99,11 @@ const page = () => {
                 color={"var(--gray-900, #101828)"}
                 textAlign={"center"}
                 fontFamily={"Chivo"}
-                fontSize={{ sm:"22px"  ,  "2xl" : "30px"}}
+                fontSize={{ sm:"22px"  ,  "md" : "30px"}}
                 fontStyle={"normal"}
                 fontWeight={"400"}
                 lineHeight={"39.9px"}
-                paddingBottom={{sm:'20px'}}
+                paddingBottom={{sm:'20px' , md:'0' }}
               >
                 Log in to your account
               </Text>
@@ -116,7 +116,7 @@ const page = () => {
             display={"flex"}
             flexDirection={"column"}
             alignItems={"center"}
-            gap={{ sm:"50px" ,"2xl":"24px"}}
+            gap={{ sm:"50px" ,"md":"24px"}}
             alignSelf={"stretch"}
             borderRadius={"12px"}
           >
@@ -125,7 +125,7 @@ const page = () => {
               display={"flex"}
               flexDirection={"column"}
               alignItems={"flex-start"}
-              gap={{ sm:"25px" ,"2xl":"20px"}}
+              gap={{ sm:"25px" ,"md":"20px"}}
               alignSelf={"stretch"}
             >
               {/* Input */}
@@ -133,7 +133,7 @@ const page = () => {
                 display={"flex"}
                 flexDirection={"column"}
                 alignItems={"flex-start"}
-                gap={{ sm:"8px" ,"2xl":"8px"}}
+                gap={{ sm:"8px" ,"md":"8px"}}
                 alignSelf={"stretch"}
               >
                 <Text
@@ -141,7 +141,7 @@ const page = () => {
                   alignSelf={"stretch"}
                   color={"var(--black-alpha-700, rgba(0, 0, 0, 0.64))"}
                   fontFamily={"Inter"}
-                  fontSize={{ sm:"11px" ,"2xl":"12px"}}
+                  fontSize={{ sm:"11px" ,"md":"12px"}}
                   fontStyle={"normal"}
                   fontWeight={"600"}
                   lineHeight={"16px"}
@@ -170,7 +170,7 @@ const page = () => {
                     background={"var(--white, #FFF)"}
                     alignSelf={"stretch"}
                     fontFamily={"Inter"}
-                    fontSize={{ sm:"14px" ,"2xl":"16px"}}
+                    fontSize={{ sm:"14px" ,"md":"16px"}}
                     fontStyle={"normal"}
                     fontWeight={"400"}
                     lineHeight={"normal"}
@@ -195,7 +195,7 @@ const page = () => {
                   alignSelf={"stretch"}
                   color={"var(--black-alpha-700, rgba(0, 0, 0, 0.64))"}
                   fontFamily={"Inter"}
-                  fontSize={{ sm:"11px" ,"2xl":"12px"}}
+                  fontSize={{ sm:"11px" ,"md":"12px"}}
                   fontStyle={"normal"}
                   fontWeight={"600"}
                   lineHeight={"16px"}
@@ -224,7 +224,7 @@ const page = () => {
                     background={"var(--white, #FFF)"}
                     alignSelf={"stretch"}
                     fontFamily={"Inter"}
-                    fontSize={{ sm:"14px" ,"2xl":"16px"}}
+                    fontSize={{ sm:"14px" ,"md":"16px"}}
                     fontStyle={"normal"}
                     fontWeight={"400"}
                     lineHeight={"24px"}
