@@ -22,7 +22,10 @@ const LoginForm = () => {
 
   return (
     <main className='flex justify-center gap-5 h-[100vh] '>
-    <div className="lg:w-2/6 sm:w-full min-h-screen flex items-center justify-center ">
+    <div className="lg:w-2/6 sm:w-full min-h-screen flex flex-col lg:flex-row items-center justify-center ">
+      <div className='lg:hidden'>
+    <Image  src="/Animal_passport.svg" alt='logo' width={'100'} height={'100'} />
+      </div>
 
       <form onSubmit={handleSubmit} className="w-full max-w-sm bg-white p-6 rounded-lg ">
         <text className='text-2xl font-bold text-slate-800'>Welcome Back!
