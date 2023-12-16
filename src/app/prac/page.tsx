@@ -35,12 +35,12 @@ const page = () => {
     console.log(data);
     // console.log(data.data.token);
 
-    // data.status == 'successful' && router.push('/')
+    data.status == 'successful' && router.push('/')
 
-    if(data.status == 'successful'){
-      const token = data.data.token
-      localStorage.setItem("LoginToken" , token)
-    }
+    // if(data.status == 'successful'){
+    //   const token = data.data.token
+    //   localStorage.setItem("LoginToken" , token)
+    // }
     
     } catch (error) {
       setMessage(`Error: ${error}`);
